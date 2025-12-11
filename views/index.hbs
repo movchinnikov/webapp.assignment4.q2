@@ -1,0 +1,13 @@
+<h1>All AirBnB Listings</h1>
+
+<a href="/airbnb/view/new">Insert New Product</a>
+
+<ul>
+  {{#each items}}
+    <li>
+      <strong>{{name}}</strong> — ${{price}}  
+      <br>
+      <a href="/airbnb/{{_id}}">API view</a>
+    </li>
+  {{/each}}
+</ul>
